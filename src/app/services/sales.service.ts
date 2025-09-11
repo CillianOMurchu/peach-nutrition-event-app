@@ -87,7 +87,9 @@ export class SalesService {
 
     const csvContent =
       'data:text/csv;charset=utf-8,' +
-      [headers, ...rows].map((e) => e.join(',')).join('\n');
+      [headers, ...rows]
+        .map((e) => e.join(';')) // Use semicolon instead of comma
+        .join('\r\n');
 
     const encodedUri = encodeURI(csvContent);
     const link = document.createElement('a');
@@ -166,7 +168,9 @@ export class SalesService {
 
     const csvContent =
       'data:text/csv;charset=utf-8,' +
-      [headers, ...rows].map((e) => e.join(',')).join('\n');
+      [headers, ...rows]
+        .map((e) => e.join(';')) // Use semicolon instead of comma
+        .join('\r\n');
 
     const encodedUri = encodeURI(csvContent);
     const link = document.createElement('a');
