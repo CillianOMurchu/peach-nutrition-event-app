@@ -1,0 +1,35 @@
+// /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.mat-mdc-card-image {
+  flex: 1 1 auto; // image fills available space
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  min-height: 120px; // ensures image is always visible
+}
+
+.mat-mdc-card-title {
+  font-size: 0.8rem;
+  height: 64px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.mat-mdc-card-actions {
+  justify-content: space-around;
+}
+
+.mat-mdc-card-footer {
+  display: grid;
+  justify-content: flex-end;
+  padding: 20px;
+}
