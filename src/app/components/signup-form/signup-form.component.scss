@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  padding: 0 16px;
+}
+
+.title {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.form-card {
+  width: 100%;
+  max-width: 400px;
+  padding: 24px;
+}
+
+.form-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.submit-btn {
+  align-self: flex-end;
+}
+
+.form-fields {
+  display: grid;
+  margin: 20px 0;
+  width: fit-content;
+}

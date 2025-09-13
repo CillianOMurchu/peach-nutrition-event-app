@@ -1,6 +1,6 @@
 .container {
-  padding: 20px 40px;
   display: grid;
+
   grid-template-columns: 4fr minmax(700px, 1fr);
 
   &--products {
@@ -69,4 +69,9 @@
 .brand-total {
   text-align: right;
   margin-top: 20px;
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
 }

@@ -33,3 +33,13 @@ body {
   justify-content: flex-end;
   padding: 20px;
 }
+
+.mat-mdc-tab {
+  border-top: 2px solid black !important;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.mat-mdc-tab-group {
+  width: 100vw;
+}

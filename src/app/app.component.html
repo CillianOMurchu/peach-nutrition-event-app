@@ -1,145 +1,164 @@
 <div class="container">
-  <div>
-    <div class="header">
-      <!-- Search Bar with Autocomplete -->
-      <div class="container--search">
-        <mat-form-field
-          class="search-bar"
-          appearance="outline"
-          style="width: 800px"
-        >
-          <mat-label>Search products</mat-label>
-          <input
-            type="text"
-            matInput
-            [formControl]="searchControl"
-            [matAutocomplete]="auto"
-            placeholder="Search by name or brand"
-          />
-          <mat-autocomplete #auto="matAutocomplete">
-            <mat-option
-              *ngFor="let option of filteredOptions$ | async"
-              [value]="option.name"
-            >
-              {{ option.name }} - {{ option.brand }}
-            </mat-option>
-          </mat-autocomplete>
-        </mat-form-field>
-      </div>
+  <div class="header">
+    <img src="logo.png" alt="Company Logo" style="height: 150px" />
 
-      <div class="clear">
-        <button mat-raised-button color="accent" (click)="clearSearchForm()">
-          Clear
-        </button>
-      </div>
-    </div>
-    <div class="reset">
-      <button mat-raised-button color="warn" (click)="resetQuantities()">
-        Reset Selected Products
-      </button>
-    </div>
-    <div class="container--products">
-      <mat-card
-        class="card"
-        appearance="outlined"
-        *ngFor="let product of filteredProducts$ | async; trackBy: trackByName"
-      >
-        <mat-card-header>
-          <mat-card-title>{{ product.name }}</mat-card-title>
-          <mat-card-subtitle
-            >€ {{ product.price | number: "1.2-2" }}
-          </mat-card-subtitle>
-        </mat-card-header>
-        <div class="card-image-container">
-          <img mat-card-image [src]="product.image" [alt]="product.name" />
-        </div>
-        <mat-card-content>
-          <!-- content in here if necessary -->
-        </mat-card-content>
-        <mat-card-actions>
-          <button
-            [disabled]="getProductQuantity(product) === 0"
-            mat-mini-fab
-            color="accent"
-            (click)="decreaseQuantity(product)"
-          >
-            -
-          </button>
-          <span class="quantity">{{ getProductQuantity(product) }}</span>
-          <button
-            mat-mini-fab
-            color="primary"
-            (click)="increaseQuantity(product)"
-          >
-            +
-          </button>
-        </mat-card-actions>
-      </mat-card>
-    </div>
-  </div>
-  <div>
-    <mat-card class="totals">
-      <div *ngFor="let brand of getBrandKeys()">
-        <h3>{{ brand }}</h3>
+    <mat-tab-group>
+      <mat-tab label="Products Selection">
+        <div>
+          <div class="header">
+            <div class="container--search">
+              <mat-form-field
+                class="search-bar"
+                appearance="outline"
+                style="width: 800px"
+              >
+                <mat-label>Search products</mat-label>
+                <input
+                  type="text"
+                  matInput
+                  [formControl]="searchControl"
+                  [matAutocomplete]="auto"
+                  placeholder="Search by name or brand"
+                />
+                <mat-autocomplete #auto="matAutocomplete">
+                  <mat-option
+                    *ngFor="let option of filteredOptions$ | async"
+                    [value]="option.name"
+                  >
+                    {{ option.name }} - {{ option.brand }}
+                  </mat-option>
+                </mat-autocomplete>
+              </mat-form-field>
+            </div>
 
-        <mat-list-item
-          class="product-card"
-          *ngFor="let product of groupedProducts[brand]"
-        >
-          <div class="product-content">
-            <button
-              mat-stroked-button
-              color="primary"
-              [matBadge]="getProductQuantity(product)"
-              matBadgeOverlap="false"
-              matBadgeColor="accent"
-              class="product-button"
-            >
-              {{ product.name }}
-            </button>
-
-            <span class="product-price">{{
-              product.price * product.quantity | currency: "EUR"
-            }}</span>
+            <div class="clear">
+              <button
+                mat-raised-button
+                color="accent"
+                (click)="clearSearchForm()"
+              >
+                Clear
+              </button>
+            </div>
           </div>
-        </mat-list-item>
-        <mat-card class="brand-total">
-          <mat-card-content
-            ><strong>Total </strong>
-            <span>{{
-              getBrandSubtotal(brand) | currency: "EUR"
-            }}</span></mat-card-content
-          >
-        </mat-card>
-      </div>
-
-      <div class="final-price">
-        <h3>Total: €{{ getTotalPriceFinal() | number: "1.2-2" }}</h3>
-      </div>
-
-      <div>
-        <div class="confirm-sale" *ngIf="getTotalPriceFinal() > 0">
-          <button
-            [disabled]="getTotalPriceFinal() === 0"
-            mat-raised-button
-            color="primary"
-            (click)="addToSales()"
-          >
-            Confirm Sale
-          </button>
+          <div class="reset">
+            <button mat-raised-button color="warn" (click)="resetQuantities()">
+              Reset Selected Products
+            </button>
+          </div>
+          <div class="container--products">
+            <mat-card
+              class="card"
+              appearance="outlined"
+              *ngFor="
+                let product of filteredProducts$ | async;
+                trackBy: trackByName
+              "
+            >
+              <mat-card-header>
+                <mat-card-title>{{ product.name }}</mat-card-title>
+                <mat-card-subtitle
+                  >€ {{ product.price | number: "1.2-2" }}
+                </mat-card-subtitle>
+              </mat-card-header>
+              <div class="card-image-container">
+                <img
+                  mat-card-image
+                  [src]="product.image"
+                  [alt]="product.name"
+                />
+              </div>
+              <mat-card-content>
+                <!-- content in here if necessary -->
+              </mat-card-content>
+              <mat-card-actions>
+                <button
+                  [disabled]="getProductQuantity(product) === 0"
+                  mat-mini-fab
+                  color="accent"
+                  (click)="decreaseQuantity(product)"
+                >
+                  -
+                </button>
+                <span class="quantity">{{ getProductQuantity(product) }}</span>
+                <button
+                  mat-mini-fab
+                  color="primary"
+                  (click)="increaseQuantity(product)"
+                >
+                  +
+                </button>
+              </mat-card-actions>
+            </mat-card>
+          </div>
         </div>
-      </div>
-    </mat-card>
-    <div class="resetting">
-      <!-- // reset daily sales button -->
+        <div>
+          <mat-card class="totals">
+            <div *ngFor="let brand of getBrandKeys()">
+              <h3>{{ brand }}</h3>
+
+              <mat-list-item
+                class="product-card"
+                *ngFor="let product of groupedProducts[brand]"
+              >
+                <div class="product-content">
+                  <button
+                    mat-stroked-button
+                    color="primary"
+                    [matBadge]="getProductQuantity(product)"
+                    matBadgeOverlap="false"
+                    matBadgeColor="accent"
+                    class="product-button"
+                  >
+                    {{ product.name }}
+                  </button>
+
+                  <span class="product-price">{{
+                    product.price * product.quantity | currency: "EUR"
+                  }}</span>
+                </div>
+              </mat-list-item>
+              <mat-card class="brand-total">
+                <mat-card-content
+                  ><strong>Total </strong>
+                  <span>{{
+                    getBrandSubtotal(brand) | currency: "EUR"
+                  }}</span></mat-card-content
+                >
+              </mat-card>
+            </div>
+
+            <div class="final-price">
+              <h3>Total: €{{ getTotalPriceFinal() | number: "1.2-2" }}</h3>
+            </div>
+
+            <div>
+              <div class="confirm-sale" *ngIf="getTotalPriceFinal() > 0">
+                <button
+                  [disabled]="getTotalPriceFinal() === 0"
+                  mat-raised-button
+                  color="primary"
+                  (click)="addToSales()"
+                >
+                  Confirm Sale
+                </button>
+              </div>
+            </div>
+          </mat-card>
+          <!-- <div class="resetting">
       <button mat-raised-button color="warn" (click)="resetDailySales()">
         Reset Daily Sales
       </button>
 
-      <!-- using exportSales -->
       <button mat-raised-button color="accent" (click)="exportSales()">
         Export Sales Report
       </button>
-    </div>
+    </div> -->
+        </div>
+      </mat-tab>
+      <mat-tab label="Signup Form">
+        <app-signup-form></app-signup-form>
+      </mat-tab>
+    </mat-tab-group>
   </div>
 </div>

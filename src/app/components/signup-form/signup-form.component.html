@@ -1,0 +1,20 @@
+<form (ngSubmit)="saveForm(name.value, email.value, phone.value); form.reset()" #form="ngForm">
+  <div class="form-fields">
+    <mat-form-field class="full-width">
+      <mat-label>Name</mat-label>
+      <input matInput #name placeholder="Enter your name" required />
+    </mat-form-field>
+
+    <mat-form-field class="full-width">
+      <mat-label>Email</mat-label>
+      <input matInput type="email" #email placeholder="Enter your email" required />
+    </mat-form-field>
+
+    <mat-form-field class="full-width">
+      <mat-label>Phone Number</mat-label>
+      <input matInput type="tel" #phone placeholder="Enter your phone number" />
+    </mat-form-field>
+  </div>
+
+  <button mat-raised-button color="primary" type="submit">Save & Export</button>
+</form>

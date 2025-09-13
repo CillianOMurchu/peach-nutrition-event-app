@@ -11,6 +11,9 @@ import { debounceTime, distinctUntilChanged } from 'rxjs/operators';
 import { Product, SaleRecord, SalesService } from './services/sales.service';
 import { MatListModule } from '@angular/material/list';
 import { MatBadgeModule } from '@angular/material/badge';
+import { MatTabsModule } from '@angular/material/tabs';
+import { SignupFormComponent } from './components/signup-form/signup-form.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 @Component({
   selector: 'app-root',
@@ -24,6 +27,10 @@ import { MatBadgeModule } from '@angular/material/badge';
     MatButtonModule,
     MatListModule,
     MatBadgeModule,
+    MatTabsModule,
+    SignupFormComponent,
+    MatFormFieldModule
+    
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
