@@ -53,7 +53,7 @@ export class SignupFormComponent {
     const wbout = XLSX.write(wb, { bookType: 'xlsx', type: 'array' });
     saveAs(
       new Blob([wbout], { type: 'application/octet-stream' }),
-      'contacts.xlsx',
+      'Soul Market Contacts.xlsx',
     );
   }
 }
