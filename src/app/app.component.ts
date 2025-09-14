@@ -1,7 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, ReactiveFormsModule } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
-import { Observable, combineLatest, startWith, map } from 'rxjs';
+import {
+  Observable,
+  combineLatest,
+  startWith,
+  map,
+  BehaviorSubject,
+} from 'rxjs';
 import { CommonModule } from '@angular/common';
 import { MatInputModule } from '@angular/material/input';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
@@ -14,7 +20,7 @@ import { MatBadgeModule } from '@angular/material/badge';
 import { MatTabsModule } from '@angular/material/tabs';
 import { SignupFormComponent } from './components/signup-form/signup-form.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
-
+import { MatSelectModule } from '@angular/material/select';
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -29,8 +35,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     MatBadgeModule,
     MatTabsModule,
     SignupFormComponent,
-    MatFormFieldModule
-    
+    MatFormFieldModule,
+    MatSelectModule,
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
@@ -40,9 +46,11 @@ export class AppComponent implements OnInit {
   filteredOptions$!: Observable<Product[]>; // for autocomplete
   filteredProducts$!: Observable<Product[]>; // for displayed cards
 
-  searchControl = new FormControl('');
+  searchControl = new FormControl(''  );
 
   totalProducts: Product[] = [];
+
+  sortDirection$ = new BehaviorSubject<'asc' | 'desc'>('desc'); // default Low→High
 
   private dailySales: SaleRecord[] = [];
 
@@ -72,13 +80,17 @@ export class AppComponent implements OnInit {
         debounceTime(200), // wait 200ms after typing stops
         distinctUntilChanged(), // only emit if value actually changed
       ),
+      this.sortDirection$,
     ]).pipe(
-      map(([products, search]) => {
+      map(([products, search, sortDirection]) => {
         const term = (search || '').toLowerCase();
-        return products.filter(
+        const filtered = products.filter(
           (p) =>
             p.name.toLowerCase().includes(term) ||
             p.brand.toLowerCase().includes(term),
+        );
+        return filtered.sort((a, b) =>
+          sortDirection === 'asc' ? a.price - b.price : b.price - a.price,
         );
       }),
     );
@@ -98,6 +110,10 @@ export class AppComponent implements OnInit {
       groups[product.brand].push(product);
     }
     return groups;
+  }
+
+  changeSort(direction: 'asc' | 'desc') {
+    this.sortDirection$.next(direction);
   }
 
   getBrandKeys() {
