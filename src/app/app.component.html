@@ -1,6 +1,4 @@
-<div class="container">
-  <!-- <div class="header"> -->
-  <!-- <img src="logo.png" alt="Company Logo" style="height: 150px" /> -->
+<!-- <div class="container">
 
   <mat-tab-group>
     <mat-tab label="Products Selection">
@@ -74,7 +72,6 @@
               <img mat-card-image [src]="product.image" [alt]="product.name" />
             </div>
             <mat-card-content>
-              <!-- content in here if necessary -->
             </mat-card-content>
             <mat-card-actions>
               <button
@@ -149,15 +146,15 @@
               </div>
             </div>
           </mat-card>
-          <!-- <div class="resetting">
-      <button mat-raised-button color="warn" (click)="resetDailySales()">
-        Reset Daily Sales
-      </button>
+          <div class="resetting">
+            <button mat-raised-button color="warn" (click)="resetDailySales()">
+              Reset Daily Sales
+            </button>
 
-      <button mat-raised-button color="accent" (click)="exportSales()">
-        Export Sales Report
-      </button>
-    </div> -->
+            <button mat-raised-button color="accent" (click)="exportSales()">
+              Export Sales Report
+            </button>
+          </div>
         </div>
       </div>
     </mat-tab>
@@ -165,4 +162,8 @@
       <app-signup-form></app-signup-form>
     </mat-tab>
   </mat-tab-group>
-</div>
+</div> -->
+
+<app-products-menu
+  [products]="(filteredProducts$ | async )|| []"
+></app-products-menu>

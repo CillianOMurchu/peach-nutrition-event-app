@@ -14,13 +14,14 @@ import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { debounceTime, distinctUntilChanged } from 'rxjs/operators';
-import { Product, SaleRecord, SalesService } from './services/sales.service';
+import { SaleRecord, SalesService } from './services/sales.service';
 import { MatListModule } from '@angular/material/list';
 import { MatBadgeModule } from '@angular/material/badge';
 import { MatTabsModule } from '@angular/material/tabs';
-import { SignupFormComponent } from './components/signup-form/signup-form.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
+import { ProductsMenuComponent } from './components/products-menu/products-menu.component';
+import { ProductModel } from './models/product.model';
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -34,21 +35,21 @@ import { MatSelectModule } from '@angular/material/select';
     MatListModule,
     MatBadgeModule,
     MatTabsModule,
-    SignupFormComponent,
     MatFormFieldModule,
     MatSelectModule,
+    ProductsMenuComponent,
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
-  products$!: Observable<Product[]>; // all products from JSON
-  filteredOptions$!: Observable<Product[]>; // for autocomplete
-  filteredProducts$!: Observable<Product[]>; // for displayed cards
+  products$!: Observable<ProductModel[]>; // all products from JSON
+  filteredOptions$!: Observable<ProductModel[]>; // for autocomplete
+  filteredProducts$!: Observable<ProductModel[]>; // for displayed cards
 
-  searchControl = new FormControl(''  );
+  searchControl = new FormControl('');
 
-  totalProducts: Product[] = [];
+  totalProducts: ProductModel[] = [];
 
   sortDirection$ = new BehaviorSubject<'asc' | 'desc'>('desc'); // default Low→High
 
@@ -65,12 +66,17 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     // Load products from JSON
     this.products$ = this.http
-      .get<Product[]>('/products.json')
+      .get<ProductModel[]>('/products.json')
       .pipe(
         map((products) =>
           products.sort((a, b) => a.brand.localeCompare(b.brand)),
         ),
       );
+
+    this.products$.subscribe({
+      next: (products) => console.log('Products loaded:', products),
+      error: (err) => console.error('Failed to load products', err),
+    });
 
     // Filtered products for cards (reactive)
     this.filteredProducts$ = combineLatest([
@@ -104,7 +110,7 @@ export class AppComponent implements OnInit {
 
   // Compute products grouped by brand
   get groupedProducts() {
-    const groups: Record<string, Product[]> = {};
+    const groups: Record<string, ProductModel[]> = {};
     for (const product of this.totalProducts) {
       if (!groups[product.brand]) groups[product.brand] = [];
       groups[product.brand].push(product);
@@ -120,21 +126,21 @@ export class AppComponent implements OnInit {
     return Object.keys(this.groupedProducts);
   }
 
-  getProductQuantity(product: Product): number {
+  getProductQuantity(product: ProductModel): number {
     const found = this.totalProducts.find((p) => p.name === product.name);
     return found ? found.quantity : 0;
   }
 
-  loadProducts(): Product[] {
+  loadProducts(): ProductModel[] {
     const data = localStorage.getItem('totalProducts');
     return data ? JSON.parse(data) : [];
   }
 
-  trackByName(index: number, product: Product) {
+  trackByName(index: number, product: ProductModel) {
     return product.name; // or product.id if you have one
   }
 
-  increaseQuantity(product: Product) {
+  increaseQuantity(product: ProductModel) {
     const existing = this.totalProducts.find((p) => p.name === product.name);
 
     if (existing) {
@@ -149,7 +155,7 @@ export class AppComponent implements OnInit {
     this.saveToLocalStorage();
   }
 
-  decreaseQuantity(product: Product) {
+  decreaseQuantity(product: ProductModel) {
     const existing = this.totalProducts.find((p) => p.name === product.name);
 
     if (existing) {
@@ -176,7 +182,7 @@ export class AppComponent implements OnInit {
     }, 0);
   }
 
-  getTotalPrice(product: Product): number {
+  getTotalPrice(product: ProductModel): number {
     const existing = this.totalProducts.find((p) => p.name === product.name);
     return existing ? existing.price * existing.quantity : 0;
   }

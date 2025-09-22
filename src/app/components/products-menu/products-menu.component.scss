@@ -1,0 +1,108 @@
+.products {
+  border: 2px solid black;
+
+  .product {
+    border: 2px solid black;
+    margin: 2px;
+  }
+}
+
+.brand-logo {
+  width: 200px;
+  padding: 20px 40px;
+}
+
+img {
+  width: 100px;
+  border-radius: 5px;
+  object-fit: contain;
+}
+
+.product-name {
+  // font-weight: bold;
+  // font-size: 1.2em;
+  font-family: "Lato", sans-serif;
+}
+
+.product-info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.product-table-container {
+  padding: 20px 40px;
+}
+
+.product-table {
+  padding: 20px 40px;
+  border-collapse: collapse; /* Removes spacing between table cells */
+  border-spacing: 0;
+  width: 100%;
+}
+
+.product-description,
+.product-name {
+  max-width: 150px;
+}
+
+.product-image {
+  // display: grid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.product-wholesale,
+.product-wholesale-header {
+  // light blue background
+  background: #f3f3f3;
+}
+
+.product-resale,
+.product-resale-header {
+  background-color: #ececec;
+}
+
+td,
+th {
+  font-size: small;
+
+  &:not(.product-image) {
+    padding: 20px;
+  }
+  border: 1px solid #cbd5e1;
+  text-align: center;
+}
+
+th {
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+
+.brand-name {
+  padding: 20px 40px;
+}
+
+.brand-header {
+  align-items: center;
+  // use space around
+  display: grid;
+  grid-template-columns: auto 1fr;
+  text-align: center;
+}
+
+@mixin gradient-text($gradient) {
+  background: $gradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; // for Firefox
+  color: transparent;
+}
+
+// Example: peach → black
+.gradient-text {
+  font-size: 60px;
+  @include gradient-text(linear-gradient(to right,  #faa471,#ef4231));
+}

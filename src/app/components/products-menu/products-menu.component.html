@@ -1,0 +1,100 @@
+<!-- <div class="products">
+  <div *ngFor="let brand of sortedByBrand">
+    
+    <img
+      [src]="getBrandLogo(brand.brand)"
+      [alt]="brand.brand"
+      class="brand-logo"
+    />
+
+    
+    <div class="product" *ngFor="let product of brand.products; let i = index">
+      <div [ngClass]="{ reverse: i % 2 === 1 }" class="product-info">
+        <div class="product-image">
+          <img [src]="product.image" [alt]="product.name" />
+        </div>
+        <div class="product-name">
+          <h4>{{ product.name }}</h4>
+        </div>
+        <div class="product-price">
+          <p>{{ product.price | currency }}</p>
+        </div>
+        <div class="product-description">
+            <p>{{ product.description }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<div class="brand-buttons">
+  <button (click)="setBrand(null)">All</button>
+  <button (click)="setBrand('IOGenix')">IOGenix</button>
+  <button (click)="setBrand('Barebells')">Barebells</button>
+  <button (click)="setBrand('Weider')">Weider</button>
+  <button (click)="setBrand('NOCCO')">NOCCO</button>
+</div>
+
+<ng-container *ngFor="let brand of sortedByBrand">
+  <div class="brand-header">
+    <!-- <img
+      [src]="getBrandLogo(brand.brand)"
+      [alt]="brand.brand"
+      class="brand-logo"
+    /> -->
+    <img
+      src="https://cdn.shopify.com/s/files/1/0940/3557/5114/files/1ac4b3072d9f8e934b132340e75a6d66.png?v=1755873220"
+      [alt]="brand.brand"
+      class="brand-logo"
+    />
+
+    <a class="website-link gradient-text">www.peach-nutrition.com</a>
+  </div>
+
+  <h1 class="brand-name">
+    {{ brand.brand }}
+  </h1>
+
+  <div class="product-table-container">
+    <table class="product-table">
+      <thead>
+        <tr>
+          <th>Image</th>
+          <th>Name</th>
+          <th>Description</th>
+          <th class="product-wholesale-header">Wholesale Price</th>
+          <th class="product-resale-header">Suggested Resale Price</th>
+          <th>Margin %</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <ng-container>
+          <!-- Inner loop for products under this brand -->
+          <tr *ngFor="let product of brand.products">
+            <td class="product-image">
+              <img
+                [src]="product.image"
+                [alt]="product.name"
+                class="product-thumb"
+              />
+            </td>
+            <td class="product-name">{{ product.name }}</td>
+            <td class="product-description">{{ product.description }}</td>
+            <td class="product-wholesale">
+              {{ product.wholesalePrice | currency : 'EUR' }}
+            </td> 
+            <td class="product-resale">{{ product.resalePrice | currency : 'EUR'}}</td>
+            <td>
+              {{
+                ((product.resalePrice - product.wholesalePrice) /
+                  product.wholesalePrice) *
+                  100 | number: "1.0-2"
+              }}%
+            </td>
+          </tr>
+        </ng-container>
+      </tbody>
+    </table>
+  </div>
+</ng-container>

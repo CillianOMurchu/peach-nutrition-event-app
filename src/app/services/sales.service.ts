@@ -1,14 +1,7 @@
 import { Injectable } from '@angular/core';
+import { ProductModel } from '@app/models/product.model';
 
-export interface Product {
-  brand: string;
-  name: string;
-  image: string;
-  price: number;
-  quantity: number;
-}
-
-export interface SaleRecord extends Product {
+export interface SaleRecord extends ProductModel {
   total: number;
   timestamp: string;
 }
@@ -22,7 +15,7 @@ export class SalesService {
     this.dailySales = stored ? JSON.parse(stored) : [];
   }
 
-  recordSale(products: Product[]) {
+  recordSale(products: ProductModel[]) {
     const now = new Date();
     const timestampBarcelona = now
       .toLocaleString('en-GB', {
