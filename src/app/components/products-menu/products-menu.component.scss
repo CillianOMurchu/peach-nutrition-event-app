@@ -57,12 +57,12 @@ img {
 .product-wholesale,
 .product-wholesale-header {
   // light blue background
-  background: #f3f3f3;
+  background: #ffe5d1;
 }
 
 .product-resale,
 .product-resale-header {
-  background-color: #ececec;
+  background-color: #fff0e6;
 }
 
 td,
@@ -83,26 +83,52 @@ th {
 
 .brand-name {
   padding: 20px 40px;
+  color: #2e2c2d;
+  padding: 0 40px;
+  margin: 0;
+  text-align: end;
+  margin-top: -46px;
 }
 
 .brand-header {
   align-items: center;
-  // use space around
   display: grid;
-  grid-template-columns: auto 1fr;
-  text-align: center;
+  grid-template-columns: 1fr auto;
+  padding-right: 40px;
 }
 
 @mixin gradient-text($gradient) {
-  background: $gradient;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text; // for Firefox
-  color: transparent;
+  // background: $gradient;
+  // -webkit-background-clip: text;
+  // -webkit-text-fill-color: transparent;
+  // background-clip: text; // for Firefox
+  // color: transparent;
+  color: #2e2c2d;
 }
 
 // Example: peach → black
 .gradient-text {
-  font-size: 60px;
-  @include gradient-text(linear-gradient(to right,  #faa471,#ef4231));
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: #2e2c2d;
+  letter-spacing: 3px;
+  // @include gradient-text(linear-gradient(to right, #faa471, #ef4231));
+}
+
+.website-link {
+  border: 2px solid #000; /* neon orange border */
+  width: fit-content;
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px 20px;
+  border-radius: 12px;
+
+  // // color: # fff; /* text pops on dark bg */
+  // // backgrou nd: #1a1a1a; /* dark background for glow contrast */
+
+  // box-shadow:
+  //   0 0 8px #ff7b00,
+  //   /* inner glow */ 0 0 16px #ff7b00,
+  //   /* mid glow */ 0 0 32px #ffae42,
+  //   /* outer soft orange */ 0 0 48px #ffc266;
 }

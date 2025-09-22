@@ -27,13 +27,13 @@
   </div>
 </div> -->
 
-<div class="brand-buttons">
+<!-- <div class="brand-buttons">
   <button (click)="setBrand(null)">All</button>
   <button (click)="setBrand('IOGenix')">IOGenix</button>
   <button (click)="setBrand('Barebells')">Barebells</button>
   <button (click)="setBrand('Weider')">Weider</button>
   <button (click)="setBrand('NOCCO')">NOCCO</button>
-</div>
+</div> -->
 
 <ng-container *ngFor="let brand of sortedByBrand">
   <div class="brand-header">
@@ -48,7 +48,9 @@
       class="brand-logo"
     />
 
-    <a class="website-link gradient-text">www.peach-nutrition.com</a>
+    <div class="website-link-container">
+      <a class="website-link gradient-text">www.peach-nutrition.com</a>
+    </div>
   </div>
 
   <h1 class="brand-name">
@@ -82,9 +84,11 @@
             <td class="product-name">{{ product.name }}</td>
             <td class="product-description">{{ product.description }}</td>
             <td class="product-wholesale">
-              {{ product.wholesalePrice | currency : 'EUR' }}
-            </td> 
-            <td class="product-resale">{{ product.resalePrice | currency : 'EUR'}}</td>
+              {{ product.wholesalePrice | currency: "EUR" }}
+            </td>
+            <td class="product-resale">
+              {{ product.resalePrice | currency: "EUR" }}
+            </td>
             <td>
               {{
                 ((product.resalePrice - product.wholesalePrice) /

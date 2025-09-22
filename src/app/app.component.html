@@ -164,6 +164,8 @@
   </mat-tab-group>
 </div> -->
 
-<app-products-menu
-  [products]="(filteredProducts$ | async )|| []"
-></app-products-menu>
+<div class="site-container">
+  <app-products-menu
+    [products]="(filteredProducts$ | async) || []"
+  ></app-products-menu>
+</div>
