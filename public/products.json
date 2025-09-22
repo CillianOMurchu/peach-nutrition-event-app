@@ -6,7 +6,6 @@
     "price": 1.61,
     "wholesalePrice": 2.1,
     "resalePrice": 3,
-    "quantity": 34,
     "description": "Deliciously chewy protein bar with a salty peanut crunch and a smooth chocolate coating—perfect for on-the-go fuel."
   },
 
@@ -17,7 +16,6 @@
     "price": 0.92,
     "wholesalePrice": 1.3,
     "resalePrice": 2,
-    "quantity": 66,
     "description": "Moist chocolate muffin filled with chocolate cream and choco chips—packed with protein for a guilt-free treat."
   },
   {
@@ -27,7 +25,6 @@
     "price": 0.92,
     "wholesalePrice": 1.3,
     "resalePrice": 2,
-    "quantity": 50,
     "description": "Protein-rich chocolate muffin with a creamy white chocolate filling and crunchy chips—perfect for a sweet protein boost."
   },
 
@@ -38,7 +35,6 @@
     "price": 1,
     "wholesalePrice": 1.3,
     "resalePrice": 2,
-    "quantity": 30,
     "description": "Soft, baked protein doughnut with black cookie crumbs and a white chocolate glaze—high in protein, low in guilt."
   },
   {
@@ -48,7 +44,6 @@
     "price": 1,
     "wholesalePrice": 1.3,
     "resalePrice": 2,
-    "quantity": 43,
     "description": "Decadent protein doughnut with black cookie chunks and rich chocolate coating—a delicious protein-packed snack."
   },
   {
@@ -58,7 +53,6 @@
     "price": 1,
     "wholesalePrice": 1.3,
     "resalePrice": 2,
-    "quantity": 15,
     "description": "Delicate praline-flavored protein doughnut with a white chocolate glaze—tasty fuel for your workouts."
   },
   {
@@ -68,7 +62,6 @@
     "price": 1.61,
     "wholesalePrice": 2.1,
     "resalePrice": 3,
-    "quantity": 41,
     "description": "Creamy banana-flavored protein bar coated in chocolate—perfect for a sweet and satisfying energy boost."
   },
   {
@@ -78,7 +71,6 @@
     "price": 1.61,
     "wholesalePrice": 2.1,
     "resalePrice": 3,
-    "quantity": 41,
     "description": "Zesty lemon cheesecake flavor with a soft, chewy texture—Barebells’ refreshing protein indulgence."
   },
   {
@@ -87,7 +79,6 @@
     "image": "https://cdn.shopify.com/s/files/1/0940/3557/5114/files/Barebells_white_salty_peanut.png?v=1756214813",
     "wholesalePrice": 2.1,
     "resalePrice": 3,
-    "quantity": 41,
     "description": "Crunchy salty peanut bar dipped in creamy white chocolate—protein-packed and irresistibly tasty."
   },
   {
@@ -96,7 +87,6 @@
     "image": "https://cdn.shopify.com/s/files/1/0940/3557/5114/files/Barebells_cookies_caramel.png?v=1756214959",
     "wholesalePrice": 2.1,
     "resalePrice": 3,
-    "quantity": 39,
     "description": "Smooth caramel and cookie chunks wrapped in chocolate—a perfect on-the-go protein snack."
   },
   {
@@ -105,7 +95,6 @@
     "image": "https://cdn.shopify.com/s/files/1/0940/3557/5114/files/Barebells_cookies_cream.png?v=1756214927",
     "wholesalePrice": 2.1,
     "resalePrice": 3,
-    "quantity": 39,
     "description": "Classic cookies and cream flavor in a soft, chewy protein bar—Barebells’ timeless favorite."
   },
   {
@@ -114,7 +103,6 @@
     "image": "https://cdn.shopify.com/s/files/1/0940/3557/5114/files/Barebells_peanut_caramel.png?v=1756215021",
     "wholesalePrice": 2.1,
     "resalePrice": 3,
-    "quantity": 44,
     "description": "Rich caramel with crunchy peanuts and chocolate—high-protein fuel with indulgent taste."
   },
   {
@@ -122,9 +110,8 @@
     "brand": "NOCCO",
     "image": "https://cdn.shopify.com/s/files/1/0940/3557/5114/files/Nocco_Miami_Strawberry_Cover.jpg?v=1756901915",
     "price": 1.46,
-    "wholesalePrice": 1.99,
-    "resalePrice": 3,
-    "quantity": 56,
+    "wholesalePrice": 1.9,
+    "resalePrice": 2.6,
     "description": "Refreshing strawberry-flavored BCAA drink with caffeine and vitamins—perfect for energy and recovery."
   },
   {
@@ -132,9 +119,8 @@
     "brand": "NOCCO",
     "image": "https://cdn.shopify.com/s/files/1/0940/3557/5114/files/Nocco_Ramonade_cover.jpg?v=1756901998",
     "price": 1.46,
-    "wholesalePrice": 1.99,
-    "resalePrice": 3,
-    "quantity": 1,
+    "wholesalePrice": 1.9,
+    "resalePrice": 2.6,
     "description": "Lightly carbonated Ramonade-flavored BCAA drink designed for mental focus and performance."
   },
   {
@@ -142,9 +128,8 @@
     "brand": "NOCCO",
     "image": "https://cdn.shopify.com/s/files/1/0940/3557/5114/files/Nocco_Grand_Sour_Cover.jpg?v=1756902040",
     "price": 1.46,
-    "wholesalePrice": 1.99,
-    "resalePrice": 3,
-    "quantity": 64,
+    "wholesalePrice": 1.9,
+    "resalePrice": 2.6,
     "description": "Tangy Grand Sour flavor with BCAAs and caffeine—ideal for pre-workout or mid-day refreshment."
   },
   {
@@ -152,9 +137,8 @@
     "brand": "NOCCO",
     "image": "https://cdn.shopify.com/s/files/1/0940/3557/5114/files/Nocco_Juicy_Melba_Cover.jpg?v=1756901962",
     "price": 1.46,
-    "wholesalePrice": 1.99,
-    "resalePrice": 3,
-    "quantity": 76,
+    "wholesalePrice": 1.9,
+    "resalePrice": 2.6,
     "description": "Juicy Melba-flavored BCAA drink—packed with amino acids, caffeine, and vitamins for active lifestyles."
   },
   {
@@ -164,7 +148,6 @@
     "price": 1.9,
     "wholesalePrice": 2.3,
     "resalePrice": 3,
-    "quantity": 48,
     "description": "Soft-baked protein cookie with classic American cookie dough flavor—indulgent and nutritious."
   },
   {
@@ -174,7 +157,6 @@
     "price": 1.9,
     "wholesalePrice": 2.3,
     "resalePrice": 3,
-    "quantity": 47,
     "description": "Rich double chocolate chip protein cookie—perfect for satisfying your sweet tooth with extra protein."
   },
   {
@@ -184,7 +166,6 @@
     "price": 1.72,
     "wholesalePrice": 1.99,
     "resalePrice": 2.99,
-    "quantity": 22,
     "description": "High-protein bar with crunchy peanuts, gooey caramel, and chocolate—delicious workout fuel."
   },
   {
@@ -194,7 +175,6 @@
     "price": 1.72,
     "wholesalePrice": 1.99,
     "resalePrice": 2.99,
-    "quantity": 23,
     "description": "Creamy stracciatella protein bar with chocolate flakes—40% protein for a satisfying snack."
   },
   {
@@ -204,7 +184,6 @@
     "price": 1.66,
     "wholesalePrice": 1.89,
     "resalePrice": 2.89,
-    "quantity": 2,
     "description": "Cookies and cream protein bar with 32% protein—smooth, chewy, and perfect for refueling."
   },
   {
@@ -214,7 +193,6 @@
     "price": 1.66,
     "wholesalePrice": 1.89,
     "resalePrice": 2.89,
-    "quantity": 3,
     "description": "Coconut-flavored protein bar—soft, sweet, and packed with protein for an exotic snack."
   }
 ]
