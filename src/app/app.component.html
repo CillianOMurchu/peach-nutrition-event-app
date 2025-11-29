@@ -1,5 +1,9 @@
-<!-- <div class="container">
-
+<div class="page-wrapper">
+  <div class="logo-container">
+    <img src="https://cdn.shopify.com/s/files/1/0940/3557/5114/files/1ac4b3072d9f8e934b132340e75a6d66.png?v=1755873220" alt="Peach Nutrition Logo" />
+  </div>
+  <mat-card class="main-card">
+    <div class="container">
   <mat-tab-group>
     <mat-tab label="Products Selection">
       <div class="header">
@@ -71,8 +75,7 @@
             <div class="card-image-container">
               <img mat-card-image [src]="product.image" [alt]="product.name" />
             </div>
-            <mat-card-content>
-            </mat-card-content>
+            <mat-card-content> </mat-card-content>
             <mat-card-actions>
               <button
                 [disabled]="getProductQuantity(product) === 0"
@@ -161,11 +164,12 @@
     <mat-tab label="Signup Form">
       <app-signup-form></app-signup-form>
     </mat-tab>
+    <mat-tab label="Products Menu">
+      <div class="site-container">
+        <app-products-menu
+          [products]="(filteredProducts$ | async) || []"
+        ></app-products-menu>
+      </div>
+    </mat-tab>
   </mat-tab-group>
-</div> -->
-
-<div class="site-container">
-  <app-products-menu
-    [products]="(filteredProducts$ | async) || []"
-  ></app-products-menu>
 </div>

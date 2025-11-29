@@ -22,6 +22,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
 import { ProductsMenuComponent } from './components/products-menu/products-menu.component';
 import { ProductModel } from './models/product.model';
+import { SignupFormComponent } from './components/signup-form/signup-form.component';
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -38,6 +39,7 @@ import { ProductModel } from './models/product.model';
     MatFormFieldModule,
     MatSelectModule,
     ProductsMenuComponent,
+    SignupFormComponent,
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],

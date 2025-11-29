@@ -1,3 +1,57 @@
+// Page wrapper for padding and centering
+.page-wrapper {
+  min-height: 100vh;
+  background: #f7f7fa;
+  padding: 32px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 32px;
+  padding: 16px 0;
+}
+
+.logo-container img {
+  height: 64px;
+  max-width: 220px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  background: white;
+  padding: 8px 16px;
+}
+
+.main-card {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 24px 24px 24px;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.08);
+  border-radius: 18px;
+  background: #fff;
+}
+
+.container {
+  padding: 0;
+}
+
+// Improve spacing for tab group
+mat-tab-group {
+  margin-bottom: 0;
+}
+
+// Add spacing between sections
+.header, .reset, .products-totals {
+  margin-bottom: 24px;
+}
+
+.site-container {
+  margin-top: 24px;
+}
 .container {
   padding: 20px 40px;
 
