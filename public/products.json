@@ -4,8 +4,8 @@
     "brand": "Barebells",
     "image": "https://cdn.shopify.com/s/files/1/0940/3557/5114/files/Barebells_salty_peanut.jpg?v=1756902233",
     "price": 1.61,
-    "wholesalePrice": 2.1,
-    "resalePrice": 3,
+    "wholesalePrice": 1.6,
+    "resalePrice": 2.6,
     "description": "Deliciously chewy protein bar with a salty peanut crunch and a smooth chocolate coating—perfect for on-the-go fuel."
   },
 
@@ -14,7 +14,7 @@
     "brand": "IOGenix",
     "image": "https://cdn.shopify.com/s/files/1/0940/3557/5114/files/IO.Genix_ProteinMuffins_Chocandchococream_chocolatechips_cover_73b98581-61b8-4ea7-bb56-497aed5e0f2b.jpg?v=1755788545",
     "price": 0.92,
-    "wholesalePrice": 1.3,
+    "wholesalePrice": 0.92,
     "resalePrice": 2,
     "description": "Moist chocolate muffin filled with chocolate cream and choco chips—packed with protein for a guilt-free treat."
   },
@@ -23,7 +23,7 @@
     "brand": "IOGenix",
     "image": "https://cdn.shopify.com/s/files/1/0940/3557/5114/files/IO.Genix_ProteinMuffins_ChocwithWhitechococream_chocolatechips_cover_9c4d6847-7ee7-4802-ac90-f7c37e3bb679.jpg?v=1755788730",
     "price": 0.92,
-    "wholesalePrice": 1.3,
+    "wholesalePrice": 0.92,
     "resalePrice": 2,
     "description": "Protein-rich chocolate muffin with a creamy white chocolate filling and crunchy chips—perfect for a sweet protein boost."
   },
@@ -33,7 +33,7 @@
     "brand": "IOGenix",
     "image": "https://cdn.shopify.com/s/files/1/0940/3557/5114/files/IO.Genix_ProteinDoghnut_BlackCookiesWhiteChoc_cover_fd723c1c-1913-4844-861c-537958b44ef6.jpg?v=1755790807",
     "price": 1,
-    "wholesalePrice": 1.3,
+    "wholesalePrice": 0.92,
     "resalePrice": 2,
     "description": "Soft, baked protein doughnut with black cookie crumbs and a white chocolate glaze—high in protein, low in guilt."
   },
@@ -42,7 +42,7 @@
     "brand": "IOGenix",
     "image": "https://cdn.shopify.com/s/files/1/0940/3557/5114/files/IO.Genix_ProteinDoghnut_BlackCookiesChoc_cover_51be1f5c-8e1c-4eee-b923-3097fded24ec.jpg?v=1755791021",
     "price": 1,
-    "wholesalePrice": 1.3,
+    "wholesalePrice": 0.92,
     "resalePrice": 2,
     "description": "Decadent protein doughnut with black cookie chunks and rich chocolate coating—a delicious protein-packed snack."
   },
@@ -51,7 +51,7 @@
     "brand": "IOGenix",
     "image": "https://cdn.shopify.com/s/files/1/0940/3557/5114/files/IO.Genix_ProteinDoghnut_Praline_WhiteChoc_cover_4777ba37-64b9-429b-bc12-44dbb4ced233.jpg?v=1755791050",
     "price": 1,
-    "wholesalePrice": 1.3,
+    "wholesalePrice": 0.92,
     "resalePrice": 2,
     "description": "Delicate praline-flavored protein doughnut with a white chocolate glaze—tasty fuel for your workouts."
   },
@@ -60,8 +60,8 @@
     "brand": "Barebells",
     "image": "https://cdn.shopify.com/s/files/1/0940/3557/5114/files/Barebells_banana_dream.png?v=1756214758",
     "price": 1.61,
-    "wholesalePrice": 2.1,
-    "resalePrice": 3,
+    "wholesalePrice": 1.6,
+    "resalePrice": 2.6,
     "description": "Creamy banana-flavored protein bar coated in chocolate—perfect for a sweet and satisfying energy boost."
   },
   {
@@ -69,40 +69,40 @@
     "brand": "Barebells",
     "image": "https://cdn.shopify.com/s/files/1/0940/3557/5114/files/Barebells_lemon_cheese.png?v=1756214987",
     "price": 1.61,
-    "wholesalePrice": 2.1,
-    "resalePrice": 3,
+    "wholesalePrice": 1.6,
+    "resalePrice": 2.6,
     "description": "Zesty lemon cheesecake flavor with a soft, chewy texture—Barebells’ refreshing protein indulgence."
   },
   {
     "name": "Barebells - White Salty Peanut",
     "brand": "Barebells",
     "image": "https://cdn.shopify.com/s/files/1/0940/3557/5114/files/Barebells_white_salty_peanut.png?v=1756214813",
-    "wholesalePrice": 2.1,
-    "resalePrice": 3,
+    "wholesalePrice": 1.6,
+    "resalePrice": 2.6,
     "description": "Crunchy salty peanut bar dipped in creamy white chocolate—protein-packed and irresistibly tasty."
   },
   {
     "name": "Barebells | Cookies and Caramel",
     "brand": "Barebells",
     "image": "https://cdn.shopify.com/s/files/1/0940/3557/5114/files/Barebells_cookies_caramel.png?v=1756214959",
-    "wholesalePrice": 2.1,
-    "resalePrice": 3,
+    "wholesalePrice": 1.6,
+    "resalePrice": 2.6,
     "description": "Smooth caramel and cookie chunks wrapped in chocolate—a perfect on-the-go protein snack."
   },
   {
     "name": "Barebells | Cookies & Cream",
     "brand": "Barebells",
     "image": "https://cdn.shopify.com/s/files/1/0940/3557/5114/files/Barebells_cookies_cream.png?v=1756214927",
-    "wholesalePrice": 2.1,
-    "resalePrice": 3,
+    "wholesalePrice": 1.6,
+    "resalePrice": 2.6,
     "description": "Classic cookies and cream flavor in a soft, chewy protein bar—Barebells’ timeless favorite."
   },
   {
     "name": "Barebells | Salty Peanut Caramel",
     "brand": "Barebells",
     "image": "https://cdn.shopify.com/s/files/1/0940/3557/5114/files/Barebells_peanut_caramel.png?v=1756215021",
-    "wholesalePrice": 2.1,
-    "resalePrice": 3,
+    "wholesalePrice": 1.6,
+    "resalePrice": 2.6,
     "description": "Rich caramel with crunchy peanuts and chocolate—high-protein fuel with indulgent taste."
   },
   {
@@ -110,7 +110,7 @@
     "brand": "NOCCO",
     "image": "https://cdn.shopify.com/s/files/1/0940/3557/5114/files/Nocco_Miami_Strawberry_Cover.jpg?v=1756901915",
     "price": 1.46,
-    "wholesalePrice": 1.9,
+    "wholesalePrice": 1.46,
     "resalePrice": 2.6,
     "description": "Refreshing strawberry-flavored BCAA drink with caffeine and vitamins—perfect for energy and recovery."
   },
@@ -119,7 +119,7 @@
     "brand": "NOCCO",
     "image": "https://cdn.shopify.com/s/files/1/0940/3557/5114/files/Nocco_Ramonade_cover.jpg?v=1756901998",
     "price": 1.46,
-    "wholesalePrice": 1.9,
+    "wholesalePrice": 1.46,
     "resalePrice": 2.6,
     "description": "Lightly carbonated Ramonade-flavored BCAA drink designed for mental focus and performance."
   },
@@ -128,7 +128,7 @@
     "brand": "NOCCO",
     "image": "https://cdn.shopify.com/s/files/1/0940/3557/5114/files/Nocco_Grand_Sour_Cover.jpg?v=1756902040",
     "price": 1.46,
-    "wholesalePrice": 1.9,
+    "wholesalePrice": 1.46,
     "resalePrice": 2.6,
     "description": "Tangy Grand Sour flavor with BCAAs and caffeine—ideal for pre-workout or mid-day refreshment."
   },
@@ -137,7 +137,7 @@
     "brand": "NOCCO",
     "image": "https://cdn.shopify.com/s/files/1/0940/3557/5114/files/Nocco_Juicy_Melba_Cover.jpg?v=1756901962",
     "price": 1.46,
-    "wholesalePrice": 1.9,
+    "wholesalePrice": 1.46,
     "resalePrice": 2.6,
     "description": "Juicy Melba-flavored BCAA drink—packed with amino acids, caffeine, and vitamins for active lifestyles."
   },
@@ -146,8 +146,8 @@
     "brand": "Weider",
     "image": "https://cdn.shopify.com/s/files/1/0940/3557/5114/files/Cookie_American_Cookie_Dough_cover.png?v=1756215234",
     "price": 1.9,
-    "wholesalePrice": 2.3,
-    "resalePrice": 3,
+    "wholesalePrice": 1.9,
+    "resalePrice": 2.6,
     "description": "Soft-baked protein cookie with classic American cookie dough flavor—indulgent and nutritious."
   },
   {
@@ -155,8 +155,8 @@
     "brand": "Weider",
     "image": "https://cdn.shopify.com/s/files/1/0940/3557/5114/files/Cookie_Double_Chocolate_cover.png?v=1756215485",
     "price": 1.9,
-    "wholesalePrice": 2.3,
-    "resalePrice": 3,
+    "wholesalePrice": 1.9,
+    "resalePrice": 2.6,
     "description": "Rich double chocolate chip protein cookie—perfect for satisfying your sweet tooth with extra protein."
   },
   {
@@ -164,7 +164,7 @@
     "brand": "Weider",
     "image": "https://cdn.shopify.com/s/files/1/0940/3557/5114/files/40_protein_Peanut_Caramel_cover.png?v=1756215176",
     "price": 1.72,
-    "wholesalePrice": 1.99,
+    "wholesalePrice": 1.72,
     "resalePrice": 2.99,
     "description": "High-protein bar with crunchy peanuts, gooey caramel, and chocolate—delicious workout fuel."
   },
@@ -173,7 +173,7 @@
     "brand": "Weider",
     "image": "https://cdn.shopify.com/s/files/1/0940/3557/5114/files/40_protein_Stracciatella_cover_0ba0d418-3a70-4e4c-ba91-8072e5170aad.png?v=1756215212",
     "price": 1.72,
-    "wholesalePrice": 1.99,
+    "wholesalePrice": 1.72,
     "resalePrice": 2.99,
     "description": "Creamy stracciatella protein bar with chocolate flakes—40% protein for a satisfying snack."
   },
@@ -182,7 +182,7 @@
     "brand": "Weider",
     "image": "https://cdn.shopify.com/s/files/1/0940/3557/5114/files/32_protein_Cookies_Cream_cover_06aa7a1e-50d1-45fb-882c-f3b9219bb21d.png?v=1756215114",
     "price": 1.66,
-    "wholesalePrice": 1.89,
+    "wholesalePrice": 1.60,
     "resalePrice": 2.89,
     "description": "Cookies and cream protein bar with 32% protein—smooth, chewy, and perfect for refueling."
   },
@@ -191,8 +191,188 @@
     "brand": "Weider",
     "image": "https://cdn.shopify.com/s/files/1/0940/3557/5114/files/32_protein_coconut_cover.png?v=1756215067",
     "price": 1.66,
-    "wholesalePrice": 1.89,
+    "wholesalePrice": 1.60,
     "resalePrice": 2.89,
     "description": "Coconut-flavored protein bar—soft, sweet, and packed with protein for an exotic snack."
+  },
+  {
+    "name": "Whey Sublime 1.5 kg – Black Cookies Cheesecake",
+    "brand": "IOGenix",
+    "image": "https://cdn.shopify.com/s/files/1/0940/3557/5114/files/IO.Genix_WheySublime_1.5kg_BlackCookiesCheesecake_cover_a49e16b6-9ede-4c85-8e93-a5d7d996006b.jpg?v=1755789107",
+    "price": 29.95,
+    "wholesalePrice": 29.95,
+    "resalePrice": 49.5,
+    "quantity": 0,
+    "description": "Ultra-smooth whey protein with rich black cookies cheesecake flavor—ideal for creamy shakes and recovery."
+  },
+  {
+    "name": "Whey Sublime 1.5 kg – Cookie Dough",
+    "brand": "IOGenix",
+    "image": "https://cdn.shopify.com/s/files/1/0940/3557/5114/files/IO.Genix_WheySublime_1.5kg_CookieDough_cover.jpg?v=1755789439",
+    "price": 29.95,
+    "wholesalePrice": 29.95,
+    "resalePrice": 49.5,
+    "quantity": 0,
+    "description": "Delicious cookie dough-flavored whey—premium protein for muscle repair and growth."
+  },
+  {
+    "name": "Whey Sublime 1.5 kg – Jumanjix",
+    "brand": "IOGenix",
+    "image": "https://cdn.shopify.com/s/files/1/0940/3557/5114/files/IO.Genix_WheySublime_1.5kg_Jumanjix_cover_82cabb80-7482-41ea-8c2d-10588b8f40c1.jpg?v=1755789730",
+    "price": 29.95,
+    "wholesalePrice": 29.95,
+    "resalePrice": 49.5,
+    "quantity": 0,
+    "description": "Exotic Jumanjix flavor whey protein—rich, smooth, and perfect for adventurous taste buds."
+  },
+  {
+    "name": "Whey Sublime 1.5 kg – Milk Choc Boom",
+    "brand": "IOGenix",
+    "image": "https://cdn.shopify.com/s/files/1/0940/3557/5114/files/IO.Genix_WheySublime_1.5kg_MilkyChocBoom_cover_f909e938-1849-490b-82b2-e26b878982e4.jpg?v=1755790134",
+    "price": 29.95,
+    "wholesalePrice": 29.95,
+    "resalePrice": 49.5,
+    "quantity": 0,
+    "description": "Classic milk chocolate explosion of flavor—high-quality whey for effective recovery."
+  },
+  {
+    "name": "Whey Sublime 1.5 kg – Choco Milk Crunchy Bar",
+    "brand": "IOGenix",
+    "image": "https://cdn.shopify.com/s/files/1/0940/3557/5114/files/IO.Genix_WheySublime_1.5kg_ChocoMilkCrunchyBar_cover.jpg?v=1755790622",
+    "price": 29.95,
+    "wholesalePrice": 29.95,
+    "resalePrice": 49.5,
+    "quantity": 0,
+    "description": "Chocolate milk and crunchy bar-inspired whey—indulgent taste with premium protein content."
+  },
+  {
+    "name": "Whey Sublime 1.5 kg – Rochello",
+    "brand": "IOGenix",
+    "image": "https://cdn.shopify.com/s/files/1/0940/3557/5114/files/7FA26043-2B71-47CD-A1A3-FF0E93751D4E.jpg?v=1755682247",
+    "price": 29.95,
+    "wholesalePrice": 29.95,
+    "resalePrice": 49.5,
+    "quantity": 0,
+    "description": "Premium whey protein inspired by Rochello chocolate flavor—creamy, smooth, and perfect for muscle recovery."
+  },
+  {
+    "name": "IO Creatine 300g – Neutral | High-Performance Creatine Powder",
+    "brand": "IOGenix",
+    "image": "https://cdn.shopify.com/s/files/1/0940/3557/5114/files/IO.Genix_IOCreatine_Neutral_cover_9d38b56c-a0ea-46b5-87a6-95e102f9c1f6.jpg?v=1755791095",
+    "price": 10.66,
+    "wholesalePrice": 10.66,
+    "resalePrice": 30,
+    "quantity": 0,
+    "description": "Pure, unflavored creatine monohydrate—boosts strength, power, and performance without added taste."
+  },
+  {
+    "name": "IO.Creatine 300g – Watermelon | High-Performance Creatine Powder",
+    "brand": "IOGenix",
+    "image": "https://cdn.shopify.com/s/files/1/0940/3557/5114/files/IO.Genix_IOCreatine_Watermelon_cover_a17c7d03-f9c3-48f8-b1df-ab2906b41db6.jpg?v=1755791117",
+    "price": 10.66,
+    "wholesalePrice": 10.66,
+    "resalePrice": 30,
+    "quantity": 5,
+    "description": "Refreshing watermelon-flavored creatine—supports explosive strength and muscle recovery."
+  },
+  {
+    "name": "Whey 80 Professional 500 g – Choco Milk Bar",
+    "brand": "IOGenix",
+    "image": "https://cdn.shopify.com/s/files/1/0940/3557/5114/files/IO.Genix_WHEY80PROFESSIONAL500G_ChocoMilkBar_cover_6eca0aa4-4797-4403-b540-f71d98865400.jpg?v=1755791254",
+    "price": 22.5,
+    "wholesalePrice": 10.66,
+    "resalePrice": 22.5,
+    "quantity": 4,
+    "description": "Choco milk bar flavor whey—professional-grade protein for lean muscle and recovery."
+  },
+  {
+    "name": "Whey 80 Professional 500 g – Red Velvet",
+    "brand": "IOGenix",
+    "image": "https://cdn.shopify.com/s/files/1/0940/3557/5114/files/IO.Genix_WHEY80PROFESSIONAL500G_RedVelvet_cover_705fb48a-afe8-4e93-861a-336f9583db98.jpg?v=1755791281",
+    "price": 22.5,
+    "wholesalePrice": 10.66,
+    "resalePrice": 22.5,
+    "quantity": 0,
+    "description": "Decadent red velvet cake-inspired whey protein—smooth texture and rich taste for indulgent shakes."
+  },
+  {
+    "name": "Whey 80 Professional 500 g – Vanilla Coconut Cake",
+    "brand": "IOGenix",
+    "image": "https://cdn.shopify.com/s/files/1/0940/3557/5114/files/IO.Genix_WHEY80PROFESSIONAL500G_VanillaCoconutCake_cover_fe75b0c5-baff-4d92-95b0-38ab652036a8.jpg?v=1755791306",
+    "price": 22.5,
+    "wholesalePrice": 10.66,
+    "resalePrice": 22.5,
+    "quantity": 4,
+    "description": "Vanilla coconut cake whey protein—light, tropical, and perfect for post-workout shakes."
+  },
+  {
+    "name": "Whey 80 Professional 500 g – Pistachio Ice Cream",
+    "brand": "IOGenix",
+    "image": "https://cdn.shopify.com/s/files/1/0940/3557/5114/files/IO.Genix_WHEY80PROFESSIONAL500G_PistachioIceCream_cover_573bb276-fa25-4bd8-99d6-44af674f95f6.jpg?v=1755791334",
+    "price": 22.5,
+    "wholesalePrice": 10.66,
+    "resalePrice": 22.5,
+    "quantity": 2,
+    "description": "Smooth pistachio ice cream flavor whey—unique, nutty, and high in protein."
+  },
+  {
+    "name": "Whey 80 Professional 1 kg – Rings White Chocolate",
+    "brand": "IOGenix",
+    "image": "https://cdn.shopify.com/s/files/1/0940/3557/5114/files/IO.Genix_WHEY80PROFESSIONAL1KG_RingsWhiteChocolate_cover.jpg?v=1755791458",
+    "price": 39.99,
+    "wholesalePrice": 22.71,
+    "resalePrice": 40,
+    "quantity": 0,
+    "description": "Rings white chocolate whey protein—smooth and indulgent for superior post-workout recovery."
+  },
+  {
+    "name": "Whey 80 Professional 1 kg – Original Black Cookies",
+    "brand": "IOGenix",
+    "image": "https://cdn.shopify.com/s/files/1/0940/3557/5114/files/IO.Genix_WHEY80PROFESSIONAL1KG_BlackCookies_cover.jpg?v=1755791491",
+    "price": 39.99,
+    "wholesalePrice": 22.71,
+    "resalePrice": 40,
+    "quantity": 2,
+    "description": "Original black cookies whey—classic cookies flavor packed with professional-grade protein."
+  },
+  {
+    "name": "Whey 80 Professional 1 kg – Rocher",
+    "brand": "IOGenix",
+    "image": "https://cdn.shopify.com/s/files/1/0940/3557/5114/files/IO.Genix_WHEY80PROFESSIONAL1KG_Rocher_cover.jpg?v=1755791525",
+    "price": 39.99,
+    "wholesalePrice": 22.71,
+    "resalePrice": 40,
+    "quantity": 4,
+    "description": "Rocher-inspired whey protein—luxurious chocolate-hazelnut taste for premium recovery."
+  },
+  {
+    "name": "Whey 80 Professional 1 kg – Rice Cream",
+    "brand": "IOGenix",
+    "image": "https://cdn.shopify.com/s/files/1/0940/3557/5114/files/IO.Genix_IsolateProfessional_1kg_CremaRicaCookies_cover_00d1899b-7348-43b7-97a7-99dc39bffd6f.jpg?v=1755791640",
+    "price": 39.99,
+    "wholesalePrice": 22.71,
+    "resalePrice": 40,
+    "quantity": 5,
+    "description": "Rice cream flavor whey protein—smooth and versatile for shakes, pancakes, or baking."
+  },
+  {
+    "name": "Whey 80 Professional 1 kg – Chokokrac",
+    "brand": "IOGenix",
+    "image": "https://cdn.shopify.com/s/files/1/0940/3557/5114/files/7E3CE828-4714-42AF-8FC0-6AC942EFB940.jpg?v=1755682047",
+    "price": 39.99,
+    "wholesalePrice": 22.71,
+    "resalePrice": 40,
+    "quantity": 4,
+    "description": "Chokokrac whey protein—intensely chocolatey flavor for powerful and delicious protein shakes."
+  },
+  {
+    "name": "Rice Cream 1 kg – Rich Cream Cookies",
+    "brand": "IOGenix",
+    "image": "https://cdn.shopify.com/s/files/1/0940/3557/5114/files/IO.Genix_IsolateProfessional_1kg_CremaRicaCookies_cover_ddbbff38-afec-4f2d-b593-309e6e497e87.jpg?v=1755788460",
+    "price": 5.9,
+    "quantity": 5,
+    "description": "Smooth, rich rice cream flavored with cookies—ideal as a pre- or post-workout carbohydrate source",
+    "wholesalePrice": 5.9,
+    "resalePrice": 13
   }
 ]
